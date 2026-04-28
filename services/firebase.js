@@ -29,12 +29,13 @@ import {
 
 // ── Firebase Configuration ──────────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey:            process.env.NEXT_PUBLIC_FIREBASE_API_KEY            || 'AIzaSyBcsD1ZepZ_J1qiKxz18pgbQ_E76hyzDkI',
-  authDomain:        process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN        || 'studio-3043107443-b8c3d.firebaseapp.com',
-  projectId:         process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID         || 'studio-3043107443-b8c3d',
-  storageBucket:     process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET     || 'studio-3043107443-b8c3d.firebasestorage.app',
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID|| '1003150941825',
-  appId:             process.env.NEXT_PUBLIC_FIREBASE_APP_ID             || '1:1003150941825:web:5d83e726723e2b42b23780',
+  apiKey:            process.env.NEXT_PUBLIC_FIREBASE_API_KEY            || 'AIzaSyDsmJrVqSk_eKnqb1Zp5J9-PVMg4uKldoM',
+  authDomain:        process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN        || 'shikshasetu-b9164.firebaseapp.com',
+  projectId:         process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID         || 'shikshasetu-b9164',
+  storageBucket:     process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET     || 'shikshasetu-b9164.firebasestorage.app',
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID|| '765534274273',
+  appId:             process.env.NEXT_PUBLIC_FIREBASE_APP_ID             || '1:765534274273:web:bfb3b288b9a15f67226da0',
+  measurementId:     process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID     || 'G-YFDNT39DHW',
 };
 
 // Prevent duplicate init in Next.js dev (hot-reload)

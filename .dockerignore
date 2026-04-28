@@ -1,0 +1,48 @@
+# Node.js / Next.js frontend (not needed in backend container)
+node_modules/
+.next/
+pages/
+components/
+hooks/
+styles/
+locales/
+public/
+package.json
+package-lock.json
+next.config.js
+postcss.config.js
+tailwind.config.js
+
+# Python local env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Test & local scripts
+ocrtest.py
+generate_quiz.py
+sample_math.png
+
+# Git & IDE
+.git/
+.gitignore
+.gitattributes
+.vs/
+.vscode/
+
+# Env / secrets (injected at runtime via Cloud Run env vars / Secret Manager)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Render / Nixpacks config (not needed on Cloud Run)
+nixpacks.toml
+runtime.txt
+vercel.json
+
+# Docs
+README.md
