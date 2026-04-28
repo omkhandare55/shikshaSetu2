@@ -250,7 +250,14 @@ export default function PlannerPage() {
         <div className="flex items-center justify-between animate-fade-up">
           <div className="flex items-center gap-3">
             <button
-              onClick={() => mode ? (setPlan(null); setMode(null)) : router.back()}
+              onClick={() => {
+                if (mode) {
+                  setPlan(null);
+                  setMode(null);
+                } else {
+                  router.back();
+                }
+              }}
               className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center active:scale-95 transition-transform"
             >
               <ArrowLeft size={20} className="text-slate-700" />
