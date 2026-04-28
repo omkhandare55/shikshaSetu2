@@ -1,0 +1,27 @@
+{
+  "name": "shikhasetu-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./node_modules/next/dist/bin/next dev",
+    "setup:api": "sh -c 'if [ ! -x ./venv/bin/pip ]; then python3 -m venv venv; fi && ./venv/bin/pip install -U pip && ./venv/bin/pip install -r server_requirements.txt'",
+    "dev:api": ".\\venv\\Scripts\\python server_main.py",
+    "dev:all": "concurrently -k -n web,api -c cyan,magenta \"npm run dev\" \"npm run dev:api\"",
+    "build": "node ./node_modules/next/dist/bin/next build",
+    "start": "node ./node_modules/next/dist/bin/next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "firebase": "^10.12.0",
+    "framer-motion": "^11.2.10",
+    "lucide-react": "^0.383.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}

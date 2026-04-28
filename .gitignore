@@ -1,0 +1,20 @@
+# heavy stuff
+llama.cpp/
+models/
+
+# node
+node_modules/
+.next/
+
+# python
+__pycache__/
+*.pyc
+
+# env
+.env
+.env.local
+.env*.local
+.env.production
+venv/
+
+
